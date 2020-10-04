@@ -6,12 +6,12 @@ namespace HeadsOrTailsLibrary
     public class HeadsOrTails
     {
         public const int MIN_NUMBER_THROW = 0;
-        
+
         public static bool ValidationNumberThrow(int numberThrow)
         {
-            return numberThrow >= 0;
+            return numberThrow >= MIN_NUMBER_THROW;
         }
-        
+
         public static bool TossCoinIsHead()
         {
             return new Random().Next(2) % 2 == 0;
@@ -25,7 +25,7 @@ namespace HeadsOrTailsLibrary
             }
 
             int count;
-            
+
             for (count = 0; numberThrow != 0; --numberThrow)
             {
                 if (TossCoinIsHead())
@@ -36,7 +36,5 @@ namespace HeadsOrTailsLibrary
 
             return count;
         }
-        
-        
     }
 }

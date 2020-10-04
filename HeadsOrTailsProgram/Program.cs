@@ -16,7 +16,7 @@ namespace HeadsOrTailsProgram
                 int numberThrow = int.Parse(Console.ReadLine());
                 int head = CalculateDropOneSide(numberThrow);
                 Console.WriteLine("\nHead: " + head);
-                Console.WriteLine("Tail: " + (numberThrow-head));
+                Console.WriteLine("Tail: " + (numberThrow - head));
             }
             catch (ValidationException)
             {

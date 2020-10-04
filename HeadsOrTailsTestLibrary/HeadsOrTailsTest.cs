@@ -60,11 +60,9 @@ namespace HeadsOrTailsTestLibrary
         {
             //arrange
             int numberThrow = -5;
-            
+
             //act + assert
             CalculateDropOneSide(numberThrow);
         }
-        
-        
     }
 }
